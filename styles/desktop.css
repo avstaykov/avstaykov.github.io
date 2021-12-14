@@ -1,0 +1,34 @@
+@media only screen and (min-width:992px){
+    .two-buttons-next-to-each-other button{
+        margin-right: 10px;
+    }
+    .header-white-strap-behind{
+        height: 100px;
+        background-color: #fff;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        top: -100px;
+    }
+    .body-after-header{
+        position: relative;
+        top: -100px;
+    }
+    .content-has-padding-bottom{
+        padding-bottom: 40px;
+    }
+    .two-buttons-next-to-each-other{
+        position: relative;
+        top: 20px;
+    }
+    .intro-image{
+        background-size: auto;
+        height: 650px;
+    }
+    .home-intro-text {
+        position: absolute;
+    }
+    .tool-brief-header{
+        display: flex;
+    }
+}

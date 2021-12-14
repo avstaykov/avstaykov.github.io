@@ -1,0 +1,148 @@
+body{
+    font-family: 'Heebo', sans-serif;
+    color: #111517;
+    font-size: 16px;
+    font-weight: 300;
+}
+h1, h2, h3, h4{
+    color: #0C5D7B;
+    font-weight: 700;
+}
+#menu-container{
+    background-color: #111517;
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+.navbar{
+    z-index: 9999;
+    background-color: rgba(17, 21, 23, 0.9);
+}
+.navbar-toggler{
+    margin: 0;
+}
+.navbar-toggler{
+    border-radius: 0;
+}
+menu{
+    height: 80px;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.logo{
+    width: 150px;
+}
+section{
+    margin-bottom: 60px;
+}
+.menu-items{
+    position: relative;
+    color: #fff;
+    justify-content: end;
+}
+.menu-items command{
+    margin: 0 20px;
+}
+.home-header-area{
+    background-color: #111517;
+}
+.home-intro{
+    position: relative;
+    z-index: 1;
+}
+.skills-and-tools{
+    display: flex;
+}
+.home-intro-text{
+    position: relative;
+    bottom: 0;
+}
+button{
+    height: 40px;
+    padding: 0 20px;
+    margin: 24px 0px;
+    border: none;
+}
+.button-has-shadow{
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(17,21,23,0.16); 
+    box-shadow: 0px 0px 15px 2px rgba(17,21,23,0.16);
+}
+.button-white{
+    background-color: #fff;
+    color: #DF2F22;
+}
+.button-red{
+    background-color: #DF2F22;
+    color: #fff;
+}
+.categories-section{
+    background-color: #F8F8F8;
+}
+.two-buttons-next-to-each-other{
+    margin-bottom: 1rem;
+}
+.category-links-buttons{
+    padding: 10px 40px;
+    width: 100%;
+}
+.category-links-buttons button{
+    margin: 10px 0;
+}
+.skills-and-tools{
+    display: flex;
+}
+.tool-block{
+    border: 1px solid #DEDEDE;
+    padding: 0 20px 16px;
+    margin-bottom: 20px;
+}
+.tool-brief-header{
+    padding: 20px 0;
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.tools-logos-block img{
+    height: 40px;
+    margin-right: 10px;
+    position: relative;
+}
+/* .tools-logos-block{
+    display: block;
+} */
+.row{
+    margin: 0 auto;
+}
+.text-white, .text-white h1{
+    color: #E1E1E1;
+}
+.intro-image{
+    background-image: url("/images/misc/adrian-portrait.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+h2{
+    margin-left: 30px;
+}
+h2::before{
+    content: "";
+    display: block;
+    position: relative;
+    top: 29px;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-color: #DF2F22;
+}
+.certificates-gallery{
+    display: inline-table;
+}
+.certificates-gallery img{
+    width: 100%;
+}
+.certificates-section{
+    align-items: center;
+    border-top: 1px solid #DEDEDE;
+    padding-top: 60px
+}
