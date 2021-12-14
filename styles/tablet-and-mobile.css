@@ -40,4 +40,11 @@
         display: grid;
         text-align: right;
     }
+    .social-media-icons img{
+        height: 30px;
+        margin-left: 15px;
+    }
+    footer .logo{
+        width: 110px;
+    }
 }
