@@ -18,7 +18,7 @@ footer{
     padding: 40px;
     background-color: #111517;
     width: 100%;
-    display: block;
+    display: flex;
 }
 .navbar{
     z-index: 9999;
