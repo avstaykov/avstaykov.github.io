@@ -32,3 +32,20 @@
         display: flex;
     }
 }
+@media only screen and (min-width: 1024px){  
+    button:hover a{
+        padding-right: 18px;
+    }
+
+    button a::after {
+        content: '→';
+        position: absolute;
+        opacity: 0;  
+        transition: 0.5s;
+        padding-left: 6px;
+    }
+
+    button:hover a::after {
+        opacity: 1;
+    }
+}

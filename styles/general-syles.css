@@ -37,7 +37,6 @@ section{
 }
 .menu-items{
     position: relative;
-    color: #fff;
     justify-content: end;
 }
 .menu-items command{
@@ -113,9 +112,6 @@ button{
 .row{
     margin: 0 auto;
 }
-.text-white, .text-white h1{
-    color: #E1E1E1;
-}
 .intro-image{
     background-image: url("/images/misc/adrian-portrait.png");
     background-repeat: no-repeat;
@@ -145,4 +141,24 @@ h2::before{
     align-items: center;
     border-top: 1px solid #DEDEDE;
     padding-top: 60px
+}
+.text-white p, .text-white h1, .menu-items{
+    color: #DEDEDE;
+}
+button a{
+    color: #111517;
+}
+.button-red a{
+    color: #fff;
+}
+.button-white a{
+    color:#DF2F22;
+}
+button, button a{
+    transition: all ease 500ms;
+}
+button:hover a{
+    text-decoration: none;
+    letter-spacing: 0.03rem;
+    font-weight: 700;
 }
