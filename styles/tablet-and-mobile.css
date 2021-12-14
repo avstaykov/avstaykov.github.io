@@ -1,6 +1,6 @@
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 450px){
     .intro-image{
-        height: 600px;
+        height: 400px;
         background-size: cover;
         margin-bottom: 40px;
     }
@@ -8,7 +8,7 @@
         flex-direction: column-reverse;;
     }
 }
-@media only screen and (max-width: 992px){
+@media only screen and (min-width: 451px){
     .intro-image{
         height: 600px;
         background-size: cover;
