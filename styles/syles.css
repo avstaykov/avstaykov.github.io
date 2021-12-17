@@ -172,3 +172,107 @@ button:hover a{
     height: 40px;
     margin-left: 20px;
 }
+/* Tablet and mobile */
+@media only screen and (max-width: 550px){
+    .intro-image{
+        height: 400px;
+        background-size: cover;
+        margin-bottom: 40px;
+    }
+    .certificates-section{
+        flex-direction: column-reverse;;
+    }
+}
+@media only screen and (min-width: 551px){
+    .intro-image{
+        height: 600px;
+        background-size: cover;
+    }
+}
+@media only screen and (min-width: 480px){
+    .tool-brief-header{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 768px){
+    .tool-brief-header{
+        display: block;
+    }
+}
+@media only screen and (min-width: 560px){
+    .category-links-buttons{
+        display: flex;
+        margin: auto;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .category-links-buttons button{
+        max-width: 30%;
+    }
+}
+@media only screen and (max-width: 575px){
+    .menu-items{
+        display: grid;
+        text-align: right;
+    }
+    .social-media-icons img{
+        height: 30px;
+        margin-left: 15px;
+    }
+    footer .logo{
+        width: 110px;
+    }
+}
+/* END of Tablet and mobile */
+
+/* Desktop */
+@media only screen and (min-width:992px){
+    .two-buttons-next-to-each-other button{
+        margin-right: 10px;
+    }
+    .header-white-strap-behind{
+        height: 100px;
+        background-color: #fff;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        top: -100px;
+    }
+    .body-after-header{
+        position: relative;
+        top: -100px;
+    }
+    .content-has-padding-bottom{
+        padding-bottom: 40px;
+    }
+    .two-buttons-next-to-each-other{
+        position: relative;
+        top: 20px;
+    }
+    .intro-image{
+        background-size: auto;
+        height: 650px;
+    }
+    .home-intro-text {
+        position: absolute;
+    }
+    .tool-brief-header{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 800px){  
+    button:hover a{
+        padding-right: 18px;
+    }
+    button a::after {
+        content: '→';
+        position: absolute;
+        opacity: 0;  
+        transition: 0.5s;
+        padding-left: 6px;
+    }
+    button:hover a::after {
+        opacity: 1;
+    }
+}
+/* END Desktop */
