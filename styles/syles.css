@@ -64,7 +64,7 @@ section{
 }
 button{
     height: 40px;
-    padding: 0 19px;
+    padding: 0 13px 0 13px;
     margin: 24px 0px;
     border: none;
 }
@@ -112,9 +112,6 @@ button{
     margin-right: 10px;
     position: relative;
 }
-/* .tools-logos-block{
-    display: block;
-} */
 .row{
     margin: 0 auto;
 }
@@ -148,7 +145,7 @@ h2::before{
     border-top: 1px solid #DEDEDE;
     padding-top: 60px
 }
-.text-white p, .text-white h1, .menu-items{
+.text-white p, .text-white h1, .menu-items a, .text-white h3{
     color: #DEDEDE;
 }
 button a{
@@ -171,6 +168,47 @@ button:hover a{
 .social-media-icons img{
     height: 40px;
     margin-left: 20px;
+}
+.projects-card-brief{
+    background-color: #111517;
+    padding: 15px;
+}
+.selected-projects-cards img{
+    width: inherit;
+}
+.category-card-label{
+    background-color: #fff;
+    position: absolute;
+    top: 15px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.category-card-label a{
+    color: #DF2F22;
+    text-decoration: none;
+    transition: all ease 500ms;
+}
+.category-card-label a:hover{
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+}
+.category-card-label::after{
+    content: "";
+	position: absolute;
+    top: 16px;
+    right: -18px;
+	width: 0; 
+    height: 0; 
+    border-left: 28px solid transparent;
+    border-right: 28px solid #fff;
+    border-top: 28px solid transparent;
+    transform: rotate(-45deg);
+	transition: all ease 500ms;
+}
+.selected-projects-cards .project-details-single-card{
+    margin-bottom: 40px;
 }
 /* Tablet and mobile */
 @media only screen and (max-width: 550px){
@@ -273,6 +311,20 @@ button:hover a{
     }
     button:hover a::after {
         opacity: 1;
+    }
+}
+@media only screen and (min-width: 992px){
+    .selected-projects-cards{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .selected-projects-cards button{
+        width: 100%;
+        margin: 10px 0 0;
+    }
+    .selected-projects-cards .projects-card-brief div:last-child{
+        margin-bottom: 5px;
     }
 }
 /* END Desktop */
