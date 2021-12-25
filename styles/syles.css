@@ -1,3 +1,12 @@
+a{
+    transition: all ease 500ms;
+    color: #DF2F22;
+}
+a:hover{
+    text-decoration: none;
+    font-weight: 700;
+    color: #DF2F22;
+}
 body{
     font-family: 'Heebo', sans-serif;
     color: #111517;
@@ -48,7 +57,7 @@ section{
 .menu-items command{
     margin: 0 20px;
 }
-.home-header-area{
+.home-header-area, .project-details-info-header{
     background-color: #111517;
 }
 .home-intro{
@@ -96,15 +105,15 @@ button{
 .skills-and-tools{
     display: flex;
 }
-.tool-block{
+.block-with-frame{
     border: 1px solid #DEDEDE;
     padding: 0 20px 16px;
     margin-bottom: 20px;
 }
-.tool-brief-header{
+.block-with-frame-header{
     padding: 20px 0;
     border-bottom: 1px solid #DEDEDE;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     justify-content: space-between;
 }
 .tools-logos-block img{
@@ -145,7 +154,7 @@ h2::before{
     border-top: 1px solid #DEDEDE;
     padding-top: 60px
 }
-.text-white p, .text-white h1, .menu-items a, .text-white h3{
+.text-white p, .text-white h1, .menu-items a, .text-white h3, .text-white h4, .intro-header-quick-links a{
     color: #DEDEDE;
 }
 button a{
@@ -185,6 +194,15 @@ button:hover a{
     padding-left: 15px;
     padding-right: 5px;
 }
+.project-details-info-header .category-card-label{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    top: 0;
+}
+.project-details-info-header .category-card-label a{
+    width: auto;
+}
 .category-card-label a{
     color: #DF2F22;
     text-decoration: none;
@@ -210,6 +228,28 @@ button:hover a{
 .selected-projects-cards .project-details-single-card{
     margin-bottom: 40px;
 }
+.intro-header-quick-links{
+    padding-left: 15px;
+    border-left: 1px solid;
+    opacity: 0.7;
+}
+.intro-header-quick-links ul{
+    list-style: none;
+    padding-left: 0;
+}
+.projects-stages-section{
+    background-color: #F8F8F8;
+}
+.section-has-no-margin-top, .section-has-no-margin-bottom{
+    margin: 0;
+}
+.projects-stages-section-content{
+    display: block;
+}
+.stages-cards div{
+    margin-left: 5px;
+    margin-right: 5px;
+}
 /* Tablet and mobile */
 @media only screen and (max-width: 550px){
     .intro-image{
@@ -228,12 +268,12 @@ button:hover a{
     }
 }
 @media only screen and (min-width: 480px){
-    .tool-brief-header{
+    .block-with-frame-header{
         display: flex;
     }
 }
 @media only screen and (min-width: 768px){
-    .tool-brief-header{
+    .block-with-frame-header{
         display: block;
     }
 }
@@ -294,7 +334,7 @@ button:hover a{
     .home-intro-text {
         position: absolute;
     }
-    .tool-brief-header{
+    .block-with-frame-header{
         display: flex;
     }
 }
@@ -302,7 +342,7 @@ button:hover a{
     button:hover a{
         padding-right: 18px;
     }
-    button a::after {
+    button a::after{
         content: '→';
         position: absolute;
         opacity: 0;  
@@ -314,7 +354,7 @@ button:hover a{
     }
 }
 @media only screen and (min-width: 992px){
-    .selected-projects-cards{
+    .selected-projects-cards, .stages-cards{
         display: flex;
     }
 }

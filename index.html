@@ -32,7 +32,7 @@
       </button>
       <div class="collapse navbar-collapse menu-items">
         <command class="nav-item">
-          <a href="/pages/projects.html">Projects</a>
+          <a href="/pages/portfolio-listing.html">Portfolio</a>
         </command>
         <command class="nav-item">
           <a href="/pages/about.html">About</a>
@@ -73,7 +73,7 @@
 
           <div class="two-buttons-next-to-each-other">
             <button class="button-has-shadow button-white"><a href="/pages/about.html">more about me</a></button>
-            <button class="button-has-shadow button-red"><a href="/pages/projects.html">projects</a></button>
+            <button class="button-has-shadow button-red"><a href="/pages/portfolio-listing.html">portfolio</a></button>
           </div>
         </div>
       </div>
@@ -86,17 +86,63 @@
 <!--all page content between the header are with image and footer-->
 <div class="container body-after-header">
 
-  <!--section with buttons to categories of skills-->
-  <section class="categories-section">
-    <row class="row">
-      <div class="category-links-buttons">
-        <button class="col-lg-4"><a href="#">UI Design</a></button>
-        <button class="col-lg-4"><a href="#">Logo Design</a></button>
-        <button class="col-lg-4"><a href="#">Print Layout</a></button>
+<!-- Project cards row-->
+<section class="container">
+  <row class="row">
+      <h2>Selected projects</h2>
+      <div class="selected-projects-cards">
+          <!--Project card-->
+          <div class="col-md-12 col-lg-4 project-details-single-card">
+              <div class="category-card-label">
+                  <a href="/pages/portfolio/ui-design/ui-projects-listing.html">UI Design</a>
+              </div>
+              <img src="/images/misc/project-card-placeholder.png">
+              <div class="projects-card-brief text-white">
+                  <h3 class="project-card-title"><a href="/pages/portfolio/ui-design/projects/ui-one.html">Project name</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem </p>
+                  <div>
+                      <button class="button-has-shadow button-red"><a href="/pages/portfolio/ui-design/projects/ui-one.html">project details</a></button>
+                      <button class="button-has-shadow button-white"><a href="/pages/portfolio/ui-design/ui-projects-listing.html">all ui designs</a></button>
+                    </div>
+              </div>
+          </div>
+          <!--End of Project card-->
+          <!--Project card-->
+          <div class="col-md-12 col-lg-4 project-details-single-card">
+              <div class="category-card-label">
+                  <a href="#">Logo Design</a>
+              </div>
+              <img src="/images/misc/project-card-placeholder.png">
+              <div class="projects-card-brief text-white">
+                  <h3 class="project-card-title">Project name</h3>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem </p>
+                  <div>
+                      <button class="button-has-shadow button-red"><a href="#">project details</a></button>
+                      <button class="button-has-shadow button-white"><a href="#">all logo designs</a></button>
+                      </div>
+              </div>
+          </div>
+          <!--End of Project card-->
+          <!--Project card-->
+          <div class="col-md-12 col-lg-4 project-details-single-card">
+              <div class="category-card-label">
+                  <a href="#">Print Layout</a>
+              </div>
+              <img src="/images/misc/project-card-placeholder.png">
+              <div class="projects-card-brief text-white">
+                  <h3 class="project-card-title">Project name</h3>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem </p>
+                  <div>
+                      <button class="button-has-shadow button-red"><a href="#">project details</a></button>
+                      <button class="button-has-shadow button-white"><a href="#">all print layouts</a></button>
+                    </div>
+              </div>
+          </div>
+          <!--End of Project card-->
       </div>
-    </row>
-  </section>
-  <!--section with buttons to categories of skills-->
+  </row>
+</section>
+<!-- End of Project cards row-->
 
   <!--section with two columns - skills and tools-->
   <section>
@@ -118,8 +164,8 @@
       </div>
       <!--column with tools briefs-->
       <div class="tools col-md-6 col-sm-12">
-        <div class="tool-block">
-          <div class="tool-brief-header">
+        <div class="block-with-frame">
+          <div class="block-with-frame-header">
             <h3>UI Design</h3>
             <div class="tools-logos-block">
               <img src="/images/tools-logos/miro.svg">
@@ -136,11 +182,11 @@
           <p>
             In my work on UI design projects, I have been using tools like Miro, Figma, and Adobe XD.
           </p>
-          <button class="button-red button-has-shadow"><a href="#">ui designs</a></button>
+          <button class="button-red button-has-shadow"><a href="/pages/portfolio/ui-design/ui-projects-listing.html">all ui designs</a></button>
         </div>
 
-        <div class="tool-block">
-          <div class="tool-brief-header">
+        <div class="block-with-frame">
+          <div class="block-with-frame-header">
             <h3>Logo Design</h3>
             <div class="tools-logos-block">
               <img src="/images/tools-logos/illustrator.svg">
@@ -156,11 +202,11 @@
             <li>where will the logo be used primarily and more.</li>
           </ul>
           <p>Based on that, some quick drafts are in order (digital and/or hand-drawn), discussions and edits are made until we get to the desired look.</p>
-          <button class="button-red button-has-shadow"><a href="#">logo designs</a></button>
+          <button class="button-red button-has-shadow"><a href="#">all logo designs</a></button>
         </div>
   
-        <div class="tool-block">
-          <div class="tool-brief-header">
+        <div class="block-with-frame">
+          <div class="block-with-frame-header">
             <h3>Print Layout</h3>
             <div class="tools-logos-block">
               <img src=" /images/tools-logos/illustrator.svg">
@@ -174,7 +220,7 @@
           <p>
             In most of the projects of that kind, I have used at least two tools of the "holy trinity": Adobe InDesign (for designs with a large number of pages), Adobe Illustrator (for small projects like flyers and leaflets), and Adobe Photoshop (for photo editing).
           </p>
-          <button class="button-red button-has-shadow"><a href="#">print layouts</a></button>
+          <button class="button-red button-has-shadow"><a href="#">all print layouts</a></button>
         </div>
       </div>
       <!--END of column with tools briefs-->
