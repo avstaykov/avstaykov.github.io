@@ -240,15 +240,33 @@ button:hover a{
 .projects-stages-section{
     background-color: #F8F8F8;
 }
-.section-has-no-margin-top, .section-has-no-margin-bottom{
-    margin: 0;
+.section-has-no-margin-top{
+    margin-top: 0;
+}
+.section-has-no-margin-bottom{
+    margin-bottom: 0;
 }
 .projects-stages-section-content{
     display: block;
 }
-.stages-cards div{
-    margin-left: 5px;
-    margin-right: 5px;
+.stages-cards .block-with-frame{
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    margin-bottom: 0;
+}
+.stages-cards{
+    padding-bottom: 40px;
+}
+.dark-background{
+    background-color: #111517;
+    padding: 15px;
+}
+.dark-background h4{
+    color: #DEDEDE;
+}
+.light-gray-background{
+    background-color: #F8F8F8;
+    padding: 15px;
 }
 /* Tablet and mobile */
 @media only screen and (max-width: 550px){
@@ -275,6 +293,14 @@ button:hover a{
 @media only screen and (min-width: 768px){
     .block-with-frame-header{
         display: block;
+    }
+}
+@media only screen and (max-width: 767px){
+    .stages-cards .block-with-frame{
+        margin-bottom: 20px;
+    }
+    .stages-cards{
+        padding-bottom: 20px;
     }
 }
 @media only screen and (min-width: 560px){
