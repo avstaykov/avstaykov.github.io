@@ -300,14 +300,24 @@ button:hover a{
     .block-with-frame-header{
         display: block;
     }
+    .stages-cards .block-with-frame:first-child, .stages-cards .block-with-frame:nth-child(3){
+        border-right: none;
+    }
+    .stages-cards .block-with-frame:first-child, .stages-cards .block-with-frame:nth-child(2){
+        border-bottom: none;
+    }
 }
 @media only screen and (max-width: 767px){
     .stages-cards .block-with-frame{
-        margin-bottom: 20px;
+        border-bottom: none;
+        /* margin-bottom: 20px; */
     }
-    .stages-cards{
+    .stages-cards .block-with-frame:last-child{
+        border-bottom: 1px solid #DEDEDE;
+    }
+    /* .stages-cards{
         padding-bottom: 20px;
-    }
+    } */
 }
 @media only screen and (min-width: 560px){
     .category-links-buttons{
@@ -369,6 +379,15 @@ button:hover a{
     .block-with-frame-header{
         display: flex;
     }
+    .stages-cards .block-with-frame{
+        border-right: none;
+    }
+    .stages-cards .block-with-frame:first-child, .stages-cards .block-with-frame:nth-child(2){
+        border-bottom: 1px solid #DEDEDE;
+    }
+    .stages-cards .block-with-frame:last-child{
+        border-right: 1px solid #DEDEDE;
+    }
 }
 @media only screen and (min-width: 800px){  
     button:hover a{
@@ -381,8 +400,23 @@ button:hover a{
         transition: 0.5s;
         padding-left: 6px;
     }
-    button:hover a::after {
+    button:hover a::after{
         opacity: 1;
+    }
+    .intro-header-quick-links a::before, .stages-cards a::before{
+        content: '→';
+        position: relative;
+        opacity: 0;
+        margin-right: -15px;
+        transition: all ease 500ms;
+        bottom: 10px;
+        transform: rotate(90deg);
+        display: inline-block;
+    }
+    .intro-header-quick-links a:hover::before, .stages-cards a:hover::before{
+        opacity: 1;
+        margin-right: 0;
+        bottom: 0;
     }
 }
 @media only screen and (min-width: 992px){
