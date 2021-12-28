@@ -23,6 +23,9 @@ h1, h2, h3, h4{
     display: block;
     padding: 10px;
 }
+#menu-container .container{
+    margin: 0 auto;
+}
 footer{
     padding: 40px;
     background-color: #111517;
@@ -31,7 +34,6 @@ footer{
 }
 .navbar{
     z-index: 9999;
-    background-color: rgba(17, 21, 23, 0.9);
 }
 .navbar-toggler{
     margin: 0;
@@ -42,7 +44,10 @@ footer{
 menu{
     height: 80px;
     line-height: 50px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.home-intro.container{
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .logo{
     width: 150px;
