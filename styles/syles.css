@@ -45,7 +45,7 @@ menu{
     height: 80px;
     line-height: 50px;
 }
-.home-intro.container{
+.has-border-and-padding-top{
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -154,10 +154,12 @@ h2::before{
 .certificates-gallery img{
     width: 100%;
 }
+.section-row-has-border-top{
+    border-top: 1px solid #DEDEDE;
+    padding-top: 60px;
+}
 .certificates-section{
     align-items: center;
-    border-top: 1px solid #DEDEDE;
-    padding-top: 60px
 }
 .text-white p, .text-white h1, .menu-items a, .text-white h3, .text-white h4, .intro-header-quick-links a{
     color: #DEDEDE;
