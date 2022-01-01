@@ -126,6 +126,9 @@ button{
     margin-right: 10px;
     position: relative;
 }
+.tools-logos-block img:last-child{
+    margin-right: 0;;
+}
 .row{
     margin: 0 auto;
 }
@@ -192,6 +195,9 @@ button:hover a{
 .selected-projects-cards img{
     width: inherit;
 }
+.selected-projects-row h2{
+    padding-left: 15px;
+}
 .category-card-label{
     background-color: #fff;
     position: absolute;
@@ -257,12 +263,15 @@ button:hover a{
     display: block;
 }
 .stages-cards .block-with-frame{
-    /* margin-left: 5px;
-    margin-right: 5px; */
     margin-bottom: 0;
 }
 .stages-cards{
     padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.projects-stages-section-content h2{
+    padding-left: 15px;
 }
 .dark-background{
     background-color: #111517;
@@ -339,6 +348,14 @@ button:hover a{
 
 
 /* Tablet and mobile */
+@media only screen and (max-width: 360px){
+    .header-has-logos.block-with-frame-header{
+        padding-bottom: 10px;
+    }
+    .tools-logos-block img{
+        margin-bottom: 10px;
+    }
+}
 @media only screen and (max-width: 550px){
     .intro-image{
         height: 400px;
@@ -355,7 +372,7 @@ button:hover a{
         background-size: cover;
     }
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 490px){
     .block-with-frame-header{
         display: flex;
     }
@@ -379,9 +396,6 @@ button:hover a{
     .stages-cards .block-with-frame:last-child{
         border-bottom: 1px solid #DEDEDE;
     }
-    /* .stages-cards{
-        padding-bottom: 20px;
-    } */
 }
 @media only screen and (min-width: 560px){
     .category-links-buttons{
