@@ -243,12 +243,11 @@ button:hover a{
 .selected-projects-cards .project-details-single-card{
     margin-bottom: 40px;
 }
-.intro-header-quick-links{
+.intro-header-quick-links, .intro-header-additional-info{
     padding-left: 15px;
     border-left: 1px solid;
-    opacity: 0.7;
 }
-.intro-header-quick-links ul{
+.intro-header-quick-links ul, .intro-header-additional-info ul{
     list-style: none;
     padding-left: 0;
 }
@@ -313,9 +312,26 @@ button:hover a{
 .footer-logo{
     width: 150px;
 }
+.nav-item .menu-item-active a{
+    font-weight: 700;
+}
+.menu-item-active::before{
+    content: "";
+    display: block;
+    position: relative;
+    right: -15px;
+    width: 10px;
+    height: 10px;
+    background-color: #DF2F22;
+}
+.navbar-collapse.menu-items.collapse.show{
+    background-color: rgba(17, 21, 23, 0.75);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    align-content: baseline;
 
-
-
+}
 
 
 
@@ -503,6 +519,13 @@ button:hover a{
         padding-left: 6px;
     }
     button:hover a::after{
+        opacity: 1;
+    }
+    .intro-header-quick-links a{
+        opacity: 0.7;
+        transition: all ease 500ms;
+    }
+    .intro-header-quick-links a:hover{
         opacity: 1;
     }
     .intro-header-quick-links a::before, .stages-cards a::before{
