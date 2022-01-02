@@ -22,18 +22,20 @@ h1, h2, h3, h4{
     width: 100%;
     display: block;
     padding: 10px;
+    height: 80px;
 }
 #menu-container .container{
     margin: 0 auto;
 }
 footer{
-    padding: 40px;
+    padding: 40px 0 0;
     background-color: #111517;
     width: 100%;
     display: inline-flex;
 }
 .navbar{
     z-index: 9999;
+    padding: 0;
 }
 .navbar-toggler{
     margin: 0;
@@ -50,7 +52,7 @@ menu{
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .logo{
-    width: 150px;
+    width: 160px;
 }
 section{
     margin-bottom: 60px;
@@ -62,7 +64,7 @@ section{
 .menu-items command{
     margin: 0 20px;
 }
-.home-header-area, .project-details-info-header{
+.home-header-area, .page-info-header{
     background-color: #111517;
 }
 .home-intro{
@@ -185,8 +187,8 @@ button:hover a{
     font-weight: 700;
 }
 .social-media-icons img{
-    height: 40px;
-    margin-left: 20px;
+    height: 30px;
+    margin-right: 20px;
 }
 .projects-card-brief{
     background-color: #111517;
@@ -207,13 +209,13 @@ button:hover a{
     padding-left: 15px;
     padding-right: 5px;
 }
-.project-details-info-header .category-card-label{
+.page-info-header .category-card-label{
     position: relative;
     display: inline-block;
     margin-bottom: 30px;
     top: 0;
 }
-.project-details-info-header .category-card-label a{
+.page-info-header .category-card-label a{
     width: auto;
 }
 .category-card-label a{
@@ -293,10 +295,24 @@ button:hover a{
 .design div .tools-logos-block{
     margin: 15px 0;
 }
-
-
-
-
+#resume-nav-link::after{
+    content: url("/images/misc/external-link-icon.svg");
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+}
+.footer-content{
+    justify-content: flex-start;
+}
+.footer-content div{
+    margin-bottom: 20px;
+}
+.footer-content.container{
+    padding: 0;
+}
+.footer-logo{
+    width: 150px;
+}
 
 
 
@@ -387,6 +403,11 @@ button:hover a{
     .stages-cards .block-with-frame:first-child, .stages-cards .block-with-frame:nth-child(2){
         border-bottom: none;
     }
+    .footer-content.container p:last-child{
+        position: inherit;
+        top: -8px;
+    }
+    
 }
 @media only screen and (max-width: 767px){
     .stages-cards .block-with-frame{
@@ -419,6 +440,9 @@ button:hover a{
     }
     footer .logo{
         width: 110px;
+    }
+    footer{
+        padding: 15px;
     }
 }
 /* END of Tablet and mobile */
