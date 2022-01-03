@@ -326,6 +326,17 @@ button:hover a{
 table li{
     list-style-type: square;
 }
+.table th{
+    padding: 0.75rem;
+    border-top: 1px solid #DEDEDE; 
+}
+table tr:not(:nth-child(1)){
+    border-top: 2px solid #DEDEDE;
+}
+
+
+
+
 
 .carousel-inner img {
     width: 100%;
@@ -415,6 +426,12 @@ table li{
         position: inherit;
         top: -8px;
     }
+    .company-name-column{
+        width: 40%;
+    }
+    th:first-child{
+        border-right: 1px solid #DEDEDE;
+    }
 }
 @media only screen and (max-width: 767px){
     .stages-cards .block-with-frame{
@@ -425,9 +442,6 @@ table li{
     }
     tr{
         display: grid;
-    }
-    table tr:not(:nth-child(1)){
-        border-top: 2px solid #111517;
     }
     .table thead th{
         border-bottom: none;
