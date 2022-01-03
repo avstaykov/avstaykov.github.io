@@ -297,7 +297,7 @@ button:hover a{
 #resume-nav-link::after{
     content: url("/images/misc/external-link-icon.svg");
     position: relative;
-    top: 3px;
+    top: 2px;
     margin-left: 5px;
 }
 .footer-content{
@@ -312,28 +312,20 @@ button:hover a{
 .footer-logo{
     width: 150px;
 }
-.nav-item .menu-item-active a{
-    font-weight: 700;
-}
-.menu-item-active::before{
-    content: "";
-    display: block;
-    position: relative;
-    right: -15px;
-    width: 10px;
-    height: 10px;
-    background-color: #DF2F22;
-}
 .navbar-collapse.menu-items.collapse.show{
     background-color: rgba(17, 21, 23, 0.75);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     height: 100vh;
     align-content: baseline;
-
 }
-
-
+.table-header-dark{
+    background-color: #111517;
+    color: #DEDEDE;
+}
+table li{
+    list-style-type: square;
+}
 
 .carousel-inner img {
     width: 100%;
@@ -423,15 +415,22 @@ button:hover a{
         position: inherit;
         top: -8px;
     }
-    
 }
 @media only screen and (max-width: 767px){
     .stages-cards .block-with-frame{
         border-bottom: none;
-        /* margin-bottom: 20px; */
     }
     .stages-cards .block-with-frame:last-child{
         border-bottom: 1px solid #DEDEDE;
+    }
+    tr{
+        display: grid;
+    }
+    table tr:not(:nth-child(1)){
+        border-top: 2px solid #111517;
+    }
+    .table thead th{
+        border-bottom: none;
     }
 }
 @media only screen and (min-width: 560px){
@@ -443,6 +442,17 @@ button:hover a{
     }
     .category-links-buttons button{
         max-width: 30%;
+    }
+}
+@media only screen and (min-width: 576px){
+    .menu-item-active::before{
+        content: "";
+        display: block;
+        position: relative;
+        right: -15px;
+        width: 12px;
+        height: 12px;
+        background-color: #DF2F22;
     }
 }
 @media only screen and (max-width: 575px){
