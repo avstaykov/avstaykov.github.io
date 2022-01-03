@@ -333,7 +333,9 @@ table li{
 table tr:not(:nth-child(1)){
     border-top: 2px solid #DEDEDE;
 }
-
+.skills-tools-tables{
+    display: block;
+}
 
 
 
