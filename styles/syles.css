@@ -434,6 +434,9 @@ table tr:not(:nth-child(1)){
     th:first-child{
         border-right: 1px solid #DEDEDE;
     }
+    .social-media-icons-column{
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 767px){
     .stages-cards .block-with-frame{
@@ -478,7 +481,6 @@ table tr:not(:nth-child(1)){
     }
     .social-media-icons img{
         height: 30px;
-        margin-left: 15px;
     }
     footer .logo{
         width: 110px;
