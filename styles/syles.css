@@ -243,13 +243,11 @@ button:hover a{
 .selected-projects-cards .project-details-single-card{
     margin-bottom: 40px;
 }
-.intro-header-quick-links, .intro-header-additional-info{
-    padding-left: 15px;
-    border-left: 1px solid;
-}
 .intro-header-quick-links ul, .intro-header-additional-info ul{
-    list-style: none;
     padding-left: 0;
+}
+.intro-header-quick-links li, .intro-header-additional-info li{
+    list-style: none;
 }
 .projects-stages-section{
     background-color: #F8F8F8;
@@ -270,6 +268,9 @@ button:hover a{
     padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
+}
+.stages-cards h5{
+    margin-bottom: 0;;
 }
 .projects-stages-section-content h2{
     padding-left: 15px;
@@ -323,7 +324,7 @@ button:hover a{
     background-color: #111517;
     color: #DEDEDE;
 }
-table li{
+li{
     list-style-type: square;
 }
 .table th{
@@ -436,6 +437,10 @@ table tr:not(:nth-child(1)){
     }
     .social-media-icons-column{
         text-align: center;
+    }
+    .intro-header-quick-links, .intro-header-additional-info{
+        padding-left: 15px;
+        border-left: 1px solid;
     }
 }
 @media only screen and (max-width: 767px){
