@@ -197,6 +197,9 @@ button:hover a{
 .selected-projects-cards img{
     width: inherit;
 }
+.selected-projects-cards{
+    margin-top: 40px;
+}
 .selected-projects-row h2{
     padding-left: 15px;
 }
@@ -236,6 +239,26 @@ button:hover a{
     height: 0; 
     border-left: 28px solid transparent;
     border-right: 28px solid #fff;
+    border-top: 28px solid transparent;
+    transform: rotate(-45deg);
+	transition: all ease 500ms;
+}
+.project-details-single-card img{
+    border: 1px solid rgba(17, 21, 23, 0.1);
+}
+.project-details-single-card .category-card-label{
+    background-color: #fafafa;
+    border-left: 1px solid rgba(17, 21, 23, 0.1);
+}
+.project-details-single-card  .category-card-label::after{
+    content: "";
+	position: absolute;
+    top: 16px;
+    right: -18px;
+	width: 0; 
+    height: 0; 
+    border-left: 28px solid transparent;
+    border-right: 28px solid #fafafa;
     border-top: 28px solid transparent;
     transform: rotate(-45deg);
 	transition: all ease 500ms;
@@ -419,10 +442,10 @@ table tr:not(:nth-child(1)){
     .block-with-frame-header{
         display: block;
     }
-    .stages-cards .block-with-frame:first-child, .stages-cards .block-with-frame:nth-child(3){
+    .stages-cards .block-with-frame .col-md-4:first-child, .stages-cards .block-with-frame .col-md-4:nth-child(3){
         border-right: none;
     }
-    .stages-cards .block-with-frame:first-child, .stages-cards .block-with-frame:nth-child(2){
+    .stages-cards .block-with-frame .col-md-4:first-child, .stages-cards .block-with-frame .col-md-4:nth-child(2){
         border-bottom: none;
     }
     .footer-content.container p:last-child{
@@ -436,7 +459,7 @@ table tr:not(:nth-child(1)){
         border-right: 1px solid #DEDEDE;
     }
     .social-media-icons-column{
-        text-align: center;
+        text-align: left;
     }
     .intro-header-quick-links, .intro-header-additional-info{
         padding-left: 15px;
@@ -502,7 +525,7 @@ table tr:not(:nth-child(1)){
         margin-right: 10px;
     }
     .header-white-strap-behind{
-        height: 100px;
+        height: 160px;
         background-color: #fff;
         width: 100%;
         position: relative;
@@ -529,6 +552,10 @@ table tr:not(:nth-child(1)){
     }
     .block-with-frame-header{
         display: flex;
+    }
+    .stages-cards row{
+        margin-left: 0;
+        margin-right: 0;
     }
     .stages-cards .block-with-frame{
         border-right: none;
