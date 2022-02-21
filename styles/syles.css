@@ -1,3 +1,9 @@
+ol li{
+    list-style: roman;
+}
+ol ul li{
+    list-style: square;
+}
 a{
     transition: all ease 500ms;
     color: #DF2F22;
@@ -320,6 +326,12 @@ button:hover a{
 }
 #resume-nav-link::after{
     content: url("/images/misc/external-link-icon.svg");
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+}
+.outbound-link::after{
+    content: url("/images/misc/external-link-icon-red.svg");
     position: relative;
     top: 2px;
     margin-left: 5px;
