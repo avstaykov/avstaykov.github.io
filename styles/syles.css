@@ -23,6 +23,10 @@ h1, h2, h3, h4{
     color: #0C5D7B;
     font-weight: 700;
 }
+h5{
+    color: rgba(12, 93, 123, 0.5);
+    font-weight: 700; 
+}
 #menu-container{
     background-color: #111517;
     width: 100%;
@@ -218,11 +222,27 @@ button:hover a{
     padding-left: 15px;
     padding-right: 5px;
 }
+.projects-card-brief .category-card-label{
+    position: relative;
+    top: -36px;
+    width: fit-content;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    margin-left: -15px;
+    padding-right: 5px;
+    margin-bottom: -20px;
+}
+
 .page-info-header .category-card-label{
     position: relative;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: 10px;
     top: 0;
+}
+.page-info-header h1{
+    margin-bottom: 0;
 }
 .page-info-header .category-card-label a{
     width: auto;
@@ -310,6 +330,7 @@ button:hover a{
 }
 .dark-background h4{
     color: #DEDEDE;
+    margin-bottom: 0;
 }
 .light-gray-background{
     background-color: #F8F8F8;
@@ -372,15 +393,38 @@ table tr:not(:nth-child(1)){
 .skills-tools-tables{
     display: block;
 }
-
-
-
-
+.personas-row{
+    display: block;
+    margin-top: 30px;
+}
+.persona-profile{
+    margin-top: 15px;
+    border: 1px solid #f8f8f8;
+}
+.persona-details-columns{
+    margin-bottom: 30px;
+}
+.persona-type{
+    background-color: #F8F8F8;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.persona-tagline{
+    font-style: italic;
+}
+.persona-character img{
+    width: inherit;
+}
+.image-credit{
+    font-size: 14px;;
+}
 .carousel-inner img {
     width: 100%;
     height: 100%
 }
-
+#custCarousel{
+    margin-top: 30px;
+}
 #custCarousel .carousel-indicators {
     position: static;
     margin-top: 20px
@@ -477,6 +521,12 @@ table tr:not(:nth-child(1)){
         padding-left: 15px;
         border-left: 1px solid;
     }
+    .persona-details-columns{
+        display: flex;
+    }
+    .persona-character{
+        border-right: 1px solid #DEDEDE;
+    }
 }
 @media only screen and (max-width: 767px){
     .stages-cards .block-with-frame{
@@ -568,6 +618,7 @@ table tr:not(:nth-child(1)){
     .stages-cards row{
         margin-left: 0;
         margin-right: 0;
+        width: -webkit-fill-available;
     }
     .stages-cards .block-with-frame{
         border-right: none;
