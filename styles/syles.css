@@ -422,6 +422,11 @@ table tr:not(:nth-child(1)){
     width: 100%;
     height: 100%
 }
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #DF2F22;
+    border: 4px solid #DF2F22;
+    padding: 10px;
+}
 #custCarousel{
     margin-top: 30px;
 }
