@@ -216,7 +216,7 @@ button:hover a{
     padding: 15px;
 }
 .selected-projects-cards img{
-    width: inherit;
+    width: 100%;
 }
 .selected-projects-cards{
     margin-top: 40px;
