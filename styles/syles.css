@@ -721,7 +721,7 @@ table tr:not(:nth-child(1)){
 }
 
 /* END Desktop */
-@media only screen and (max-width:991px){
+@media only screen and (max-width:1199px){
     .project-details-single-card .button-white{
         background-color: transparent;
     }
