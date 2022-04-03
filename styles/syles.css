@@ -261,6 +261,9 @@ button:hover a{
 .page-info-header .category-card-label a{
     width: auto;
 }
+.page-info-header{
+    padding-bottom: 20px;
+}
 .category-card-label a{
     color: #DF2F22;
     text-decoration: none;
