@@ -473,8 +473,12 @@ table tr:not(:nth-child(1)){
     width: 100%;
 }
 
-
-
+#summary h2{
+    padding-left: 0;
+}
+#summary ul{
+   padding-left: 18px; 
+}
 
 
 
